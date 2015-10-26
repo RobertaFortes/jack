@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.905141,
+          -43.174826
+        ]
+      },
+      "properties": {
+        "phoneFormatted": "(202) 234-7336",
+        "phone": "2022347336",
+        "address": "Rua São José",
+        "city": "Rio de Janeiro",
+        "country": "Brasil",
+        "crossStreet": "at 15th St NW",
+        "postalCode": "20005",
+        "state": "D.C."
+      }
+    }
+  ]
+}

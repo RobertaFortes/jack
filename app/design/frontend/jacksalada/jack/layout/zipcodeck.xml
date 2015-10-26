@@ -1,0 +1,60 @@
+<layout version="0.1.0">
+<default>
+	<reference name="head">
+		  <action method="addItem" ifconfig="zipcodeck/general/enabled"><type>skin_css</type><name>css/zipcode/zipcode.css</name></action>
+		  <action method="addItem" ifconfig="zipcodeck/general/enabled_jquery"><type>skin_js</type><name>js/zipcode/jquery-1.7.1-min.js</name></action>
+		   <action method="addItem" ifconfig="zipcodeck/general/enabled_jquery"><type>skin_js</type><name>js/zipcode/jQuery.noConflict.js</name></action>
+	</reference>	  
+</default>
+<catalog_product_view>
+		 <reference name="alert.urls">
+			 <block type="core/template" name="checkcode"   after="upsell_products"> 
+                <action method="setTemplate" ifconfig="zipcodeck/general/enabledview" >
+                    <template>zipcode/zipcode.phtml</template> 
+                </action>
+			</block> 
+		 </reference>
+	</catalog_product_view>
+	
+	 <catalog_category_default>
+	  <reference name="left_first">
+	  	 <block type="core/template" name="checkcode"   after="-"> 
+                <action method="setTemplate" ifconfig="zipcodeck/general/enabledlist" >
+                    <template>zipcode/zipcode.phtml</template> 
+                </action>
+			</block> 
+	  </reference>
+	 </catalog_category_default>
+	 <catalog_category_layered>
+	  <reference name="left_first">
+	  	 <block type="core/template" name="checkcode" after="-"> 
+                <action method="setTemplate"  ifconfig="zipcodeck/general/enabledlist">
+                    <template>zipcode/zipcode.phtml</template> 
+                </action>
+			</block> 
+	  </reference>
+	 </catalog_category_layered>
+	 <checkout_cart_index>
+	 	 <reference name="checkout.cart.extra">
+	 	 	<block type="core/template" name="checkcode"  after="-"> 
+                <action method="setTemplate" ifconfig="zipcodeck/general/enabledcart" >
+                    <template>zipcode/zipcode.phtml</template> 
+                </action>
+			</block> 
+	 	 </reference>
+	 </checkout_cart_index>
+	 
+	     <!--
+    One page checkout payment methods block
+    -->
+    <checkout_onepage_paymentmethod>
+        <remove name="right"/>
+        <remove name="left"/>
+
+        <block type="checkout/onepage_payment_methods" name="root" output="toHtml" template="zipcode/payment_methods.phtml">
+            <action method="setMethodFormTemplate"><method>purchaseorder</method><template>payment/form/purchaseorder.phtml</template></action>
+            <block type="core/template" name="checkout.onepage.payment.methods.scripts" as="scripts" />
+            <block type="core/template" name="checkout.onepage.payment.methods.additional" as="additional" />
+        </block>
+    </checkout_onepage_paymentmethod>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1295px" height="701px" viewBox="0 0 1295 701" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="CARDÁPIO" sketch:type="MSArtboardGroup" transform="translate(-72.000000, -671.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(72.000000, 670.000000)">
+                <path d="M652.5,451.5 L763.5,336.5" id="Line-4" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(708.000000, 394.000000) scale(1, -1) translate(-708.000000, -394.000000) "></path>
+                <circle id="Oval-6" stroke="#171E2A" stroke-width="2" sketch:type="MSShapeGroup" cx="646.5" cy="330.5" r="8.5"></circle>
+                <circle id="Oval-5" fill="#171E2A" sketch:type="MSShapeGroup" cx="646.5" cy="330.5" r="4.5"></circle>
+                <path d="M764.5,452.5 L1293.54633,452.5" id="Line-5" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M682.5,701.5 L793.5,586.5" id="Line-9" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(738.000000, 644.000000) scale(1, -1) translate(-738.000000, -644.000000) "></path>
+                <circle id="Oval-10" stroke="#171E2A" stroke-width="2" sketch:type="MSShapeGroup" cx="676.5" cy="580.5" r="8.5"></circle>
+                <circle id="Oval-9" fill="#171E2A" sketch:type="MSShapeGroup" cx="676.5" cy="580.5" r="4.5"></circle>
+                <path d="M793.5,701.5 L1293.52499,701.5" id="Line-8" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M454.5,124.5 L565.5,9.5" id="Line-6" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(510.000000, 67.000000) scale(1, -1) translate(-510.000000, -67.000000) "></path>
+                <circle id="Oval-8" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup" cx="571.5" cy="132.5" r="8.5"></circle>
+                <circle id="Oval-7" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="571.5" cy="132.5" r="4.5"></circle>
+                <path d="M72.4986877,9.5 L453.5,9.5" id="Line-7" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M249.5,602.5 L468.5,367.5" id="Line-2" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(359.000000, 485.000000) scale(-1, -1) translate(-359.000000, -485.000000) "></path>
+                <circle id="Oval-4" stroke="#171E2A" stroke-width="2" sketch:type="MSShapeGroup" cx="475.5" cy="360.5" r="8.5"></circle>
+                <circle id="Oval-3" fill="#171E2A" sketch:type="MSShapeGroup" cx="475.5" cy="360.5" r="4.5"></circle>
+                <path d="M0.5,602.5 L249.501968,602.5" id="Line-3" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M346.309954,301.690044 L388.5,259.5" id="Line-13" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(367.500000, 280.500000) scale(-1, -1) translate(-367.500000, -280.500000) "></path>
+                <circle id="Oval-12" stroke="#171E2A" stroke-width="2" sketch:type="MSShapeGroup" cx="395.5" cy="252.5" r="8.5"></circle>
+                <circle id="Oval-11" fill="#171E2A" sketch:type="MSShapeGroup" cx="395.5" cy="252.5" r="4.5"></circle>
+                <path d="M4.49853802,301.5 L346.5,301.5" id="Line-10" stroke="#171E2A" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M903.309954,126.690044 L945.5,84.5" id="Line-12" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(924.500000, 105.500000) scale(-1, -1) translate(-924.500000, -105.500000) "></path>
+                <circle id="Oval-14" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup" cx="896.5" cy="132.5" r="8.5"></circle>
+                <circle id="Oval-13" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="896.5" cy="132.5" r="4.5"></circle>
+                <path d="M946.5,83.5 L1242.50674,83.5" id="Line-11" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-1" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup" cx="695.5" cy="243.5" r="8.5"></circle>
+                <path d="M702.5,236.5 L921.5,1.5" id="Line" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M921.5,1.5 L1244.50156,1.5" id="Line" stroke="#FFFFFF" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-2" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="695.5" cy="243.5" r="4.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

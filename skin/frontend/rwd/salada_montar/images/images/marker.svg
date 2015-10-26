@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="38px" viewBox="0 0 26 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons Location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="LOJAS-4" sketch:type="MSArtboardGroup" transform="translate(-784.000000, -247.000000)" fill="#171E2A">
+            <g id="Icons-Location" sketch:type="MSLayerGroup" transform="translate(784.000000, 247.000000)">
+                <g id="Icon-Location-2" transform="translate(0.000000, -0.162072)" sketch:type="MSShapeGroup">
+                    <g id="Group" transform="translate(0.000000, -0.000000)">
+                        <g id="XMLID_75_">
+                            <path d="M25.8952539,13.0102905 C25.8952539,20.0697859 12.6994641,38.2303273 12.6994641,38.2303273 C12.6994641,38.2303273 0.206664045,20.0697859 0.206664045,13.0102905 C0.206664045,5.95079519 5.9592283,0.224714187 13.051374,0.224714187 C20.1435196,0.224714187 25.8952539,5.95079519 25.8952539,13.0102905 L25.8952539,13.0102905 Z M4.37480395,13.6976516 C4.37480395,18.467045 8.25909203,22.3334508 13.050544,22.3334508 C17.8411659,22.3334508 21.725454,18.467045 21.725454,13.6976516 C21.725454,8.92908432 17.8411659,5.0618523 13.050544,5.0618523 C8.25909203,5.0618523 4.37480395,8.92825817 4.37480395,13.6976516 L4.37480395,13.6976516 Z" id="Shape"></path>
+                        </g>
+                        <path d="M17.8959444,14.104946 C17.666041,16.7692962 15.3122288,18.73885 12.6388758,18.5116573 C9.96552286,18.2844647 7.98519992,15.9398365 8.2151033,13.2787909 C8.44334672,10.616093 10.7971589,8.64653928 13.4721718,8.87373193 C16.1438648,9.10092459 18.1250178,11.4455528 17.8959444,14.104946 L17.8959444,14.104946 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,219 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     jacksalada_mais_vendidos
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+  
+
+<header id="header">
+    <nav class='navbar navbar-inverse'>
+    <div class="container-fluid">
+        <div data-title='Menu' id='access-global-menu'>
+            <a data-target='#global-menu' href='javascript:void(0);' id='link-global-menu'>
+              <i class='burger-menu-css'></i>
+              <span class='text-hide'>Abrir Menu</span>
+            </a>
+        </div>
+        <a class="logo" href="<?php echo $this->getUrl('') ?>">
+            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
+            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
+        </a>
+
+        <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
+              // See app.js for details ?>
+        <div class="store-language-container"></div>
+
+        <!-- Skip Links -->
+
+        <div class="pull-right">
+           <!--  <a href="#header-nav" class="skip-link skip-nav">
+                <span class="icon"></span>
+                <span class="label"><?php echo $this->__('Menu'); ?></span>
+            </a>
+
+            <a href="#header-search" class="skip-link skip-search">
+                <span class="icon"></span>
+                <span class="label"><?php echo $this->__('Search'); ?></span>
+            </a> -->
+
+            <div class="account-cart-wrapper">
+              <div class='link-account'>
+                <!-- <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="btn btn-link" title='Veja os últimos pedidos ou altere seus dados'>
+                    
+                     Minha Conta
+                </a> -->
+
+                <?php if (Mage::getSingleton('customer/session')->isLoggedIn()==0): ?>
+                            <ul class="links">
+                              <!-- <li class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></li> -->
+
+                                <li class="contatopo"><a href="<?php echo $this->getBaseUrl()?>customer/account/" title="<?php echo $this->__('My Account') ?>" data-hover="<?php echo $this->__('My Account') ?>"><?php echo $this->__('My Account') ?></a></li>
+                               <!--  <li><a href="/nossas-lojas">Lojas</a></li>
+                                <li><a href="/contato">Fale Conosco</a></li>
+                                <li><a href="<?php echo $this->getBaseUrl()?>customer/account/login/" title="<?php echo $this->__('Log In') ?>" data-hover="<?php echo $this->__('Log In') ?>"><?php echo $this->__('Log In') ?></a> ou <a href="<?php echo $this->getBaseUrl()?>customer/account/create/" title="<?php echo $this->__('Register') ?>" data-hover="<?php echo $this->__('Register') ?>"><?php echo $this->__('Register') ?></a></li> -->
+                            </ul>
+                        <?php else:?>
+                            <ul class="links">
+                              <li class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?><span class="caret"></span></li>
+                              
+                                <!-- <li><a href="<?php echo $this->getBaseUrl()?>customer/account/" title="<?php echo $this->__('My Account') ?>" data-hover="<?php echo $this->__('My Account') ?>"><?php echo $this->__('My Account') ?></a></li>
+                                 <li><a href="/nossas-lojas">Lojas</a></li>
+                                <li><a href="/contato">Fale Conosco</a></li> -->
+                                <ul class="dropdown-menu" role="menu">
+                                 <li><a href="<?php echo $this->getBaseUrl()?>/sales/order/history/" title="<?php echo $this->__('') ?>" data-hover="<?php echo $this->__('') ?>"><?php echo $this->__('Últimos Pedidos') ?></a></li>  
+                                <li><a href="<?php echo $this->getBaseUrl()?>customer/account/edit/" title="<?php echo $this->__('') ?>" data-hover="<?php echo $this->__('') ?>"><?php echo $this->__('Editar Perfil') ?></a></li>  
+                                 <li><a href="<?php echo $this->getBaseUrl()?>/customer/address/index/" title="<?php echo $this->__('') ?>" data-hover="<?php echo $this->__('') ?>"><?php echo $this->__('Endereço de entrega') ?></a></li>  
+                                 <li><a href="<?php echo $this->getBaseUrl()?>customer/account/logout" title="<?php echo $this->__('Log Out') ?>" data-hover="<?php echo $this->__('Log Out') ?>"><?php echo $this->__('Log Out') ?></a></li>    
+                                 </ul>                          
+                            </ul>
+                        <?php endif;?>
+            
+              </div>
+
+                <!-- Cart -->
+
+                <!-- <div class="header-minicart">
+                    <?php echo $this->getChildHtml('minicart_head'); ?>
+                </div> -->
+                <a class='btn btn-default' href='pedir-agora.html' id='btn-order-now' title='Faça agora o seu pedido'>Pedir agora</a>
+            </div>
+
+
+        
+
+        <!-- Account -->
+
+        <div id="header-account" class="skip-content">
+
+            <?php echo $this->getChildHtml('topLinks') ?>
+        </div>
+  </div>
+  </div>
+</nav>
+
+</header> 
+<nav id='global-menu'>
+      <ul class='nav nav-pills nav-stacked'>
+        <li>
+          <a href='http://52.21.137.15/index.php/cardapio.html'>
+            <i class='icon-icon-flatware'></i>
+            Cardápio
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <i class='icon-jack-salada'></i>
+            Sobre o Jack Salada
+          </a>
+        </li>
+        <li>
+          <a href='http://52.21.137.15/index.php/lojas.html'>
+            <i class='icon-location-1'></i>
+            Lojas
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <i class='icon-store'></i>
+            Seja um franqueado
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <i class='icon-heart-1'></i>
+            Trabalhe conosco
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <i class='icon-comment'></i>
+            Contato
+          </a>
+        </li>
+      </ul>
+    </nav>
+   
+   
+  
+
+
+       
+ <main id='content'>
+    <section class='jumbotron' >
+       
+     
+      <section class='post'>
+        <div class='container-fluid'>
+     
+    <div>  <?php echo $this->getChildHtml('header') ?></div>
+    <?php echo $this->getChildHtml('global_notices') ?>
+    
+   
+      
+       
+
+              <!--   <?php echo $this->getChildHtml('breadcrumbs') ?> -->
+             
+                
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+              
+            
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+        
+      </div>
+      </section>
+       </section>
+       <?php
+        $block = Mage::getModel('cms/block')->load('modal');
+       
+        echo $block->getContent();
+        ?>
+</main>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+

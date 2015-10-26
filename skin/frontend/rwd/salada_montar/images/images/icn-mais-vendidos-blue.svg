@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="86px" height="83px" viewBox="0 0 86 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon Mais Vendidos</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="CARDÁPIO" sketch:type="MSArtboardGroup" transform="translate(-111.000000, -482.000000)" fill="#171E2A">
+            <g id="Menu-Cardápio" sketch:type="MSLayerGroup" transform="translate(41.000000, 436.000000)">
+                <g id="Icon-Mais-Vendidos" transform="translate(70.000000, 46.000000)" sketch:type="MSShapeGroup">
+                    <path d="M69.57486,82.0914947 L43,62.7118737 L16.42514,82.0914947 L26.57572,50.7355579 L0,31.3559368 L32.84856,31.3559368 L43,0 L53.15144,31.3559368 L86,31.3559368 L59.42514,50.7355579 L69.57486,82.0914947 L69.57486,82.0914947 Z M43,58.4409684 L63.02596,73.0438737 L55.37712,49.4157895 L75.40308,34.8120211 L50.6497,34.8120211 L43,11.1830737 L35.3503,34.8120211 L10.59692,34.8120211 L30.62288,49.4157895 L22.97318,73.0438737 L43,58.4409684 L43,58.4409684 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
